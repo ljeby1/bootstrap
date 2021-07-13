@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Table - ACCT</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Header-Blue.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-bar-chart-line" style="transform: rotate(15deg) scale(2.40);">
+                            <path fill-rule="evenodd" d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"></path>
+                        </svg></div>
+                    <div class="sidebar-brand-text mx-3"><span>ACCT</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>User Review</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-primary py-0" type="button" onclick="window.location.href=&#39;claim_search.html&#39;;"><i class="fas fa-search"></i></button></div>
+                        </form>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="me-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 12, 2019</span>
+                                                <p>A new monthly report is ready to download!</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 7, 2019</span>
+                                                <p>$290.29 has been deposited into your account!</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 2, 2019</span>
+                                                <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                            </div>
+                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">7</span><i class="fas fa-envelope fa-fw"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
+                                                <div class="status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
+                                                <div class="bg-warning status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="fw-bold">
+                                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                                <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                            </div>
+                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                    </div>
+                                </div>
+                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+                            </li>
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Anthem User</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="transform: scale(1.62);">
+
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10ZM12 7C12 8.10457 11.1046 9 10 9C8.89543 9 8 8.10457 8 7C8 5.89543 8.89543 5 10 5C11.1046 5 12 5.89543 12 7ZM9.99993 11C7.98239 11 6.24394 12.195 5.45374 13.9157C6.55403 15.192 8.18265 16 9.99998 16C11.8173 16 13.4459 15.1921 14.5462 13.9158C13.756 12.195 12.0175 11 9.99993 11Z" fill="currentColor"></path>
+                                        </svg></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Activity log</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-4">ACCT Run Review:&nbsp;2021-07-08 11:34:23 AM<br></h3>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-primary py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span style="font-size: 15px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" class="fa-2x text-gray-300">
+                                                        <path d="M9 2C7.89543 2 7 2.89543 7 4V12C7 13.1046 7.89543 14 9 14H15C16.1046 14 17 13.1046 17 12V6.41421C17 5.88378 16.7893 5.37507 16.4142 5L14 2.58579C13.6249 2.21071 13.1162 2 12.5858 2H9Z" fill="currentColor"></path>
+                                                        <path d="M3 8C3 6.89543 3.89543 6 5 6V16H13C13 17.1046 12.1046 18 11 18H5C3.89543 18 3 17.1046 3 16V8Z" fill="currentColor"></path>
+                                                    </svg>Claims Management</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span style="font-size: 15px;">Open Reviews:&nbsp;&nbsp;<span class="badge rounded-pill bg-primary">150</span>&nbsp;<br>Line Pay Diff: <span class="badge rounded-pill bg-danger">42</span><br><br><br></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-success py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-success fw-bold text-xs mb-1"><span style="font-size: 15px;"><i class="fas fa-building fa-2x text-gray-300"></i>&nbsp; Provider &amp; Network</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span style="font-size: 15px;">Open Reviews: <span class="badge rounded-pill bg-primary">23</span><br>Line Pay Diff: <span class="badge rounded-pill bg-danger">4</span><br><br><br></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-info py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-info fw-bold text-xs mb-1"><span style="font-size: 15px;"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i>&nbsp; Pricing</span></div>
+                                            <div class="row g-0 align-items-center">
+                                                <div class="col"><span style="font-size: 15px;color: rgb(50,51,58);"><strong>Open Reviews: </strong><span class="badge rounded-pill bg-primary">43</span><br><strong>Line Pay Diff: </strong><span class="badge rounded-pill bg-danger">9</span><br><br><br></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-warning py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-warning fw-bold text-xs mb-1"><span style="font-size: 15px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-check2-square fa-2x text-gray-300">
+                                                        <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+                                                        <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 0 0 3 14.5h10a1.5 1.5 0 0 0 1.5-1.5V8a.5.5 0 0 0-1 0v5a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 0 0-1H3A1.5 1.5 0 0 0 1.5 3v10z"></path>
+                                                    </svg>&nbsp; Benefits</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span style="font-size: 15px;">Total Reviews: <span class="badge rounded-pill bg-primary">9</span><br>Line Pay Diff: <span class="badge rounded-pill bg-success">0</span><br><br><br></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 27px;">
+                        <div class="col">
+                            <div class="card shadow">
+                                <div class="card-header py-3">
+                                    <p class="text-primary d-inline-block float-start m-0 fw-bold" style="width: 318px;"><i class="fas fa-external-link-square-alt" style="transform: scale(1.62);"></i>&nbsp; &nbsp;Exceptions by Description</p>
+                                    <p class="d-inline-block float-end">View All&nbsp;&nbsp;<i class="fa fa-expand" style="transform: scale(1.23);"></i></p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6 text-nowrap">
+                                            <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label class="form-label">Show&nbsp;<select class="d-inline-block form-select form-select-sm">
+                                                        <option value="10" selected="">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                    </select>&nbsp;</label></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="text-md-end dataTables_filter" id="dataTable_filter"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label></div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
+                                        <table class="table my-0" id="dataTable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Exception Description&nbsp; &nbsp;<i class="fa fa-sort"></i></th>
+                                                    <th class="text-center">Exception Count</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>NetworX Std Fee Sched</td>
+                                                    <td class="text-center" style="color: var(--bs-pink);">13858</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Deny preauth not obtained</td>
+                                                    <td class="text-center">2439<br></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Date req. Prior to Subscriber Eff Dt.</td>
+                                                    <td class="text-center">2382<br></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Discount Based on Default for Charges</td>
+                                                    <td class="text-center">1647</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Paid at contracted rate</td>
+                                                    <td class="text-center">1494</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Agreement Discount from Charges</td>
+                                                    <td class="text-center">1099</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Disallow-not allowed under contract</td>
+                                                    <td class="text-center">446</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Duplicate Service</td>
+                                                    <td class="text-center">396</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Unbundled procedure</td>
+                                                    <td class="text-center">215</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Definite Duplicate Claim</td>
+                                                    <td class="text-center">174</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr></tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 align-self-center">
+                                            <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 27px;">
+                        <div class="col">
+                            <div class="card shadow">
+                                <div class="card-header py-3">
+                                    <p class="text-primary d-inline-block float-start m-0 fw-bold" style="width: 318px;"><i class="fas fa-building" style="transform: scale(1.62);"></i>&nbsp; &nbsp;Provider - ACCT 835 to 837 Results</p>
+                                    <p class="d-inline-block float-end">View All&nbsp;&nbsp;<i class="fa fa-expand" style="transform: scale(1.23);"></i></p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6 text-nowrap">
+                                            <div id="dataTable_length-2" class="dataTables_length" aria-controls="dataTable"><label class="form-label">Show&nbsp;<select class="d-inline-block form-select form-select-sm">
+                                                        <option value="10" selected="">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                    </select>&nbsp;</label></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="text-md-end dataTables_filter" id="dataTable_filter-2"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label></div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive table mt-2" id="dataTable-3" role="grid" aria-describedby="dataTable_info">
+                                        <table class="table my-0" id="dataTable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Provider</th>
+                                                    <th>Charged $ Diff</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Jacine Hospital</td>
+                                                    <td style="color: var(--bs-pink);">$-16,546.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Doctor Services</td>
+                                                    <td>4700.00<br></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dr. Jim Walters</td>
+                                                    <td>345.00<br></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Brown Specialty Group</td>
+                                                    <td>$4,980.00</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr></tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 align-self-center">
+                                            <p id="dataTable_info-2" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 4 of 4</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                                                <ul class="pagination">
+                                                    <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 27px;">
+                        <div class="col">
+                            <div class="card shadow">
+                                <div class="card-header py-3">
+                                    <p class="text-primary d-inline-block float-start m-0 fw-bold" style="width: 318px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="transform: scale(1.62);">
+                                            <path d="M9 2C7.89543 2 7 2.89543 7 4V12C7 13.1046 7.89543 14 9 14H15C16.1046 14 17 13.1046 17 12V6.41421C17 5.88378 16.7893 5.37507 16.4142 5L14 2.58579C13.6249 2.21071 13.1162 2 12.5858 2H9Z" fill="currentColor"></path>
+                                            <path d="M3 8C3 6.89543 3.89543 6 5 6V16H13C13 17.1046 12.1046 18 11 18H5C3.89543 18 3 17.1046 3 16V8Z" fill="currentColor"></path>
+                                        </svg>&nbsp; &nbsp;Claims - ACCT 835 to 837 Results</p>
+                                    <p class="d-inline-block float-end">View All&nbsp;&nbsp;<i class="fa fa-expand" style="transform: scale(1.23);"></i></p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6 text-nowrap">
+                                            <div id="dataTable_length-1" class="dataTables_length" aria-controls="dataTable"><label class="form-label">Show&nbsp;<select class="d-inline-block form-select form-select-sm">
+                                                        <option value="10" selected="">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                    </select>&nbsp;</label></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="text-md-end dataTables_filter" id="dataTable_filter-1"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label></div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive table mt-2" id="dataTable-2" role="grid" aria-describedby="dataTable_info">
+                                        <table class="table my-0" id="dataTable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Anthem Claim</th>
+                                                    <th>Total Submitted Charge Diff</th>
+                                                    <th>Billing NPI Error</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>364563456456</td>
+                                                    <td style="color: rgb(239,79,44);">$-2.00</td>
+                                                    <td>Different NPI</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4564563454576</td>
+                                                    <td>$3,000.00<br></td>
+                                                    <td>Different NPI<br></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4567567457456</td>
+                                                    <td>$489.99</td>
+                                                    <td>Missing NPI<br></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>45674567567456</td>
+                                                    <td>$399.00</td>
+                                                    <td>Missing NPI<br></td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr></tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 align-self-center">
+                                            <p id="dataTable_info-1" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 4 of 4</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                                                <ul class="pagination">
+                                                    <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow">
+                                <div class="card-header py-3">
+                                    <p class="text-primary d-inline-block float-start m-0 fw-bold" style="width: 318px;"><i class="fa fa-stack-overflow" style="transform: scale(1.62);"></i>&nbsp; &nbsp;ACCT Run Session Results</p>
+                                    <p class="d-inline-block float-end">View All&nbsp;&nbsp;<i class="fa fa-expand" style="transform: scale(1.23);"></i></p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6 text-nowrap">
+                                            <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label class="form-label">Show&nbsp;<select class="d-inline-block form-select form-select-sm">
+                                                        <option value="10" selected="">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                    </select>&nbsp;</label></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="text-md-end dataTables_filter" id="dataTable_filter"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 text-nowrap">
+                                            <div id="dataTable_length-3" class="dataTables_length" aria-controls="dataTable"><label class="form-label" style="font-weight: bold;">Filter Results:</label>
+                                                <p>where "Line Paid % Amnt" <select class="d-inline-block form-select form-select-sm" style="width: 81.8px;">
+                                                        <option value="eq" selected="">=</option>
+                                                        <option value="ge">&gt;=</option>
+                                                        <option value="le">&lt;=</option>
+                                                        <option value="g" selected="">&gt;</option>
+                                                        <option value="l">&lt;</option>
+                                                        <option value="a">All</option>
+                                                    </select>&nbsp; &nbsp;&nbsp;<select class="d-inline-block form-select form-select-sm" style="width: 81.8px;">
+                                                        <option value="5" selected="">5</option>
+                                                        <option value="10">10</option>
+                                                        <option value="15">15</option>
+                                                        <option value="%">All</option>
+                                                    </select></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive table mt-2" id="dataTable-1" role="grid" aria-describedby="dataTable_info">
+                                        <table class="table my-0" id="dataTable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Anthem Claim</th>
+                                                    <th>Claim Line</th>
+                                                    <th>Line Paid % Amnt</th>
+                                                    <th>Expl Code</th>
+                                                    <th>Expl Description</th>
+                                                    <th>Service Adj&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="claimdetail.html">364563456456</a></td>
+                                                    <td>1</td>
+                                                    <td>100%</td>
+                                                    <td>Y3Z</td>
+                                                    <td>Deny preauth not obtained</td>
+                                                    <td>FALSE</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4564563454576</td>
+                                                    <td>1</td>
+                                                    <td>100%<br></td>
+                                                    <td>Y3Z<br></td>
+                                                    <td>Deny preauth not obtained<br></td>
+                                                    <td>TRUE</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4567567457456</td>
+                                                    <td>2</td>
+                                                    <td>100%</td>
+                                                    <td>Y3Z</td>
+                                                    <td>Possible Duplicate Scenario #2<br></td>
+                                                    <td>FALSE</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>45674567567456</td>
+                                                    <td>1</td>
+                                                    <td>100%</td>
+                                                    <td>S23</td>
+                                                    <td>Possible Duplicate Scenario #2<br></td>
+                                                    <td>FALSE</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>56735756756756</td>
+                                                    <td>3</td>
+                                                    <td>3%</td>
+                                                    <td>S23</td>
+                                                    <td>NetworX Std Fee Sched<br></td>
+                                                    <td>FALSE</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>35675673567576</td>
+                                                    <td>3</td>
+                                                    <td>100%</td>
+                                                    <td>S23</td>
+                                                    <td>Deny preauth not obtained<br></td>
+                                                    <td>FALSE</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3567356767856<br></td>
+                                                    <td>4</td>
+                                                    <td>1%</td>
+                                                    <td>Y3Z</td>
+                                                    <td>NetworX Std Fee Sched<br></td>
+                                                    <td>FALSE</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1535234523454</td>
+                                                    <td>1</td>
+                                                    <td>15%</td>
+                                                    <td>Y3Z</td>
+                                                    <td>Deny preauth not obtained<br></td>
+                                                    <td>FALSE</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>345235235466</td>
+                                                    <td>2</td>
+                                                    <td>100%</td>
+                                                    <td>EAL</td>
+                                                    <td>NetworX Std Fee Sched<br></td>
+                                                    <td>FALSE</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>246246456</td>
+                                                    <td>3</td>
+                                                    <td>100%</td>
+                                                    <td>S23</td>
+                                                    <td>Possible Duplicate Scenario #2<br></td>
+                                                    <td>FALSE</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr></tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 align-self-center">
+                                            <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 27</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                                                <ul class="pagination">
+                                                    <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © ACCT 2021</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
